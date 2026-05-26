@@ -94,6 +94,34 @@ nav {
   text-decoration: none;
 }
 
+.lang-toggle {
+  padding: 0.28rem 0.72rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(248, 250, 252, 0.88);
+  font-size: 0.78rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.18s, border-color 0.18s, color 0.18s;
+}
+
+.lang-toggle:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+/* ── i18n visibility ── */
+html[lang="zh-CN"] .lang-en {
+  display: none !important;
+}
+
+html[lang="en"] .lang-zh {
+  display: none !important;
+}
+
 /* ── Hero ── */
 .hero {
   background: linear-gradient(155deg, var(--navy) 0%, #0f2d3d 42%, var(--ocean) 100%);

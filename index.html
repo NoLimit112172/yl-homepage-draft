@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>李易聪 Yicong Li | 中国科学技术大学 EEIS</title>
-  <meta name="description" content="李易聪，中国科学技术大学电子工程与信息科学系教师，多模态多智能体实验室。">
+  <meta name="description" content="李易聪，中国科学技术大学电子工程与信息科学系教师，多模态多智能体实验室。" id="meta-desc">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
@@ -17,11 +17,14 @@
 <nav>
   <a class="nav-name" href="#home">李易聪 · Yicong Li</a>
   <ul class="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#research">Research</a></li>
-    <li><a href="#news">News</a></li>
-    <li><a href="#publications">Publications</a></li>
-    <li><a href="#background">Background</a></li>
+    <li><a href="#home"><span class="lang-zh">首页</span><span class="lang-en">Home</span></a></li>
+    <li><a href="#research"><span class="lang-zh">研究</span><span class="lang-en">Research</span></a></li>
+    <li><a href="#news"><span class="lang-zh">动态</span><span class="lang-en">News</span></a></li>
+    <li><a href="#publications"><span class="lang-zh">论文</span><span class="lang-en">Publications</span></a></li>
+    <li><a href="#background"><span class="lang-zh">背景</span><span class="lang-en">Background</span></a></li>
+    <li>
+      <button type="button" class="lang-toggle" id="lang-toggle" aria-label="Switch language">EN</button>
+    </li>
   </ul>
 </nav>
 
@@ -32,19 +35,25 @@
     </div>
     <div class="hero-text">
       <h1>李易聪 <span class="name-en">Yicong Li</span></h1>
-      <p class="hero-subtitle">Faculty &nbsp;·&nbsp; Multimodal Learning &nbsp;·&nbsp; Multi-Agent Systems &nbsp;·&nbsp; Intelligent AI</p>
+      <p class="hero-subtitle lang-zh">教师 · 多模态学习 · 多智能体系统 · 智能决策</p>
+      <p class="hero-subtitle lang-en">Faculty · Multimodal Learning · Multi-Agent Systems · Intelligent AI</p>
 
       <div class="hero-affil">
         <i class="fa-solid fa-flask-vial"></i>
-        <span>多模态多智能体实验室 · Multimodal Multi-Agent Laboratory</span>
+        <span class="lang-zh">多模态多智能体实验室</span>
+        <span class="lang-en">Multimodal Multi-Agent Laboratory</span>
       </div>
       <div class="hero-affil">
         <i class="fa-solid fa-building-columns"></i>
-        <a href="https://eeis.ustc.edu.cn/" target="_blank" rel="noopener">中国科学技术大学 · 电子工程与信息科学系 (EEIS)</a>
+        <a href="https://eeis.ustc.edu.cn/" target="_blank" rel="noopener">
+          <span class="lang-zh">中国科学技术大学 · 电子工程与信息科学系</span>
+          <span class="lang-en">University of Science and Technology of China · EEIS</span>
+        </a>
       </div>
       <div class="hero-affil">
         <i class="fa-solid fa-location-dot"></i>
-        <span>高新校区信智楼 B906 · High-tech Campus, Bldg. B906</span>
+        <span class="lang-zh">高新校区信智楼 B906</span>
+        <span class="lang-en">High-tech Campus, Information &amp; Intelligence Bldg. B906</span>
       </div>
       <div class="hero-affil">
         <i class="fa-solid fa-envelope"></i>
@@ -76,35 +85,50 @@
   <div class="container">
 
     <section class="section bio" id="biography">
-      <h2 class="section-title">Biography</h2>
-      <p>
-        李易聪（Yicong Li）现任
+      <h2 class="section-title"><span class="lang-zh">个人简介</span><span class="lang-en">Biography</span></h2>
+      <p class="lang-zh">
+        李易聪现任
         <a href="https://www.ustc.edu.cn/" target="_blank" rel="noopener">中国科学技术大学</a>
         <a href="https://eeis.ustc.edu.cn/" target="_blank" rel="noopener">电子工程与信息科学系</a>（六系）教师，
-        主持<span class="hl">多模态多智能体实验室</span>（Multimodal Multi-Agent Laboratory）。
+        主持<span class="hl">多模态多智能体实验室</span>，
         实验室位于<span class="hl">高新校区信智楼 B906</span>。
       </p>
-      <p>
-        课题组面向
-        <strong>多模态感知与理解</strong>、
-        <strong>多智能体协同</strong>与
-        <strong>智能决策</strong>等方向开展研究，
+      <p class="lang-en">
+        Yicong Li is a faculty member at the
+        <a href="https://eeis.ustc.edu.cn/" target="_blank" rel="noopener">Department of Electronic Engineering and Information Science (EEIS)</a>,
+        <a href="https://www.ustc.edu.cn/" target="_blank" rel="noopener">University of Science and Technology of China (USTC)</a>.
+        He leads the <span class="hl">Multimodal Multi-Agent Laboratory</span>,
+        located at <span class="hl">Room B906, Information &amp; Intelligence Building, High-tech Campus</span>.
+      </p>
+      <p class="lang-zh">
+        课题组面向<strong>多模态感知与理解</strong>、<strong>多智能体协同</strong>与<strong>智能决策</strong>等方向开展研究，
         探索语言、视觉、视频等多源信息融合下的可解释、可泛化智能系统，
         并推动相关技术在真实场景中的应用。
       </p>
-      <div class="collab-box">
+      <p class="lang-en">
+        Our group works on <strong>multimodal perception and understanding</strong>,
+        <strong>multi-agent collaboration</strong>, and <strong>intelligent decision-making</strong>,
+        building interpretable and generalizable systems that fuse language, vision, video, and spatial signals
+        for real-world applications.
+      </p>
+      <div class="collab-box lang-zh">
         欢迎对多模态学习、多智能体系统及相关方向感兴趣的同学与研究者联系合作。
         请通过邮件 <strong><a href="mailto:liyicong@ustc.edu.cn">liyicong@ustc.edu.cn</a></strong> 与我取得联系。
+      </div>
+      <div class="collab-box lang-en">
+        I welcome collaborations on multimodal learning, multi-agent systems, and related topics.
+        Please feel free to reach out via <strong><a href="mailto:liyicong@ustc.edu.cn">liyicong@ustc.edu.cn</a></strong>.
       </div>
     </section>
 
     <section class="section" id="research">
-      <h2 class="section-title">Research Interests</h2>
+      <h2 class="section-title"><span class="lang-zh">研究方向</span><span class="lang-en">Research Interests</span></h2>
       <div class="ri-grid">
         <div class="ri-card">
           <div class="ri-icon"><i class="fa-solid fa-film"></i></div>
           <h4>Video Question Answering</h4>
-          <p>Grounding, reasoning, and interpretability for complex questions over video.</p>
+          <p class="lang-zh">面向视频的复杂问答，关注视觉 grounding、推理过程与可解释性。</p>
+          <p class="lang-en">Grounding, reasoning, and interpretability for complex questions over video.</p>
           <div class="ri-tags">
             <span class="ri-tag">VQA</span>
             <span class="ri-tag">Grounding</span>
@@ -114,7 +138,8 @@
         <div class="ri-card">
           <div class="ri-icon"><i class="fa-solid fa-cube"></i></div>
           <h4>3D Scene Understanding</h4>
-          <p>Language-guided affordance and semantic understanding for objects and 3D environments.</p>
+          <p class="lang-zh">语言引导的三维场景与物体 affordance 理解及语义分割。</p>
+          <p class="lang-en">Language-guided affordance and semantic understanding for objects and 3D environments.</p>
           <div class="ri-tags">
             <span class="ri-tag">3D Vision</span>
             <span class="ri-tag">Affordance</span>
@@ -124,7 +149,8 @@
         <div class="ri-card">
           <div class="ri-icon"><i class="fa-solid fa-layer-group"></i></div>
           <h4>Multimodal Learning</h4>
-          <p>Robust and generalizable learning across language, vision, video, and spatial cues.</p>
+          <p class="lang-zh">跨语言、视觉、视频与空间信号的鲁棒学习与泛化建模。</p>
+          <p class="lang-en">Robust and generalizable learning across language, vision, video, and spatial cues.</p>
           <div class="ri-tags">
             <span class="ri-tag">Vision-Language</span>
             <span class="ri-tag">Robustness</span>
@@ -133,7 +159,7 @@
         </div>
       </div>
 
-      <div class="rt-panel">
+      <div class="rt-panel en-only">
         <div class="rt-header">
           <i class="fa-solid fa-film"></i>
           <strong>Video Question Answering</strong>
@@ -154,7 +180,7 @@
         </ul>
       </div>
 
-      <div class="rt-panel">
+      <div class="rt-panel en-only">
         <div class="rt-header">
           <i class="fa-solid fa-cube"></i>
           <strong>3D Scene Understanding</strong>
@@ -167,7 +193,7 @@
       </div>
     </section>
 
-    <section class="section" id="news">
+    <section class="section en-only" id="news">
       <h2 class="section-title">News &amp; Highlights</h2>
       <ul class="news-list">
         <li class="news-item">
@@ -201,7 +227,7 @@
       </ul>
     </section>
 
-    <section class="section" id="publications">
+    <section class="section en-only" id="publications">
       <h2 class="section-title">Publications</h2>
       <ul class="pub-list">
         <li class="pub-item">
@@ -227,7 +253,7 @@
       </ul>
     </section>
 
-    <section class="section two-col" id="background">
+    <section class="section two-col en-only" id="background">
       <div>
         <h2 class="section-title">Education</h2>
         <ul class="timeline">
@@ -271,8 +297,44 @@
 </div>
 
 <footer>
-  <p>© 2026 李易聪 Yicong Li · 中国科学技术大学电子工程与信息科学系</p>
+  <p class="lang-zh">© 2026 李易聪 · 中国科学技术大学电子工程与信息科学系</p>
+  <p class="lang-en">© 2026 Yicong Li · Department of EEIS, University of Science and Technology of China</p>
 </footer>
+
+<script>
+(function () {
+  var META = {
+    zh: {
+      title: "李易聪 Yicong Li | 中国科学技术大学 EEIS",
+      desc: "李易聪，中国科学技术大学电子工程与信息科学系教师，多模态多智能体实验室。"
+    },
+    en: {
+      title: "Yicong Li | Faculty, USTC EEIS",
+      desc: "Yicong Li, faculty at the Department of EEIS, University of Science and Technology of China."
+    }
+  };
+
+  var btn = document.getElementById("lang-toggle");
+  var stored = localStorage.getItem("site-lang");
+  var lang = stored === "en" ? "en" : "zh";
+
+  function applyLang(next) {
+    lang = next;
+    localStorage.setItem("site-lang", lang);
+    document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
+    document.title = META[lang].title;
+    document.getElementById("meta-desc").setAttribute("content", META[lang].desc);
+    btn.textContent = lang === "zh" ? "EN" : "中";
+    btn.setAttribute("aria-label", lang === "zh" ? "Switch to English" : "切换至中文");
+  }
+
+  btn.addEventListener("click", function () {
+    applyLang(lang === "zh" ? "en" : "zh");
+  });
+
+  applyLang(lang);
+})();
+</script>
 
 </body>
 </html>
