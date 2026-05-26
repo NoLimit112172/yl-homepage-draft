@@ -1,21 +1,36 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" class="lang-zh">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>李易聪 Yicong Li | 中国科学技术大学 EEIS</title>
   <meta name="description" content="李易聪，中国科学技术大学电子工程与信息科学系教师，多模态多智能体实验室。" id="meta-desc">
+  <script>
+    (function () {
+      var lang = localStorage.getItem("site-lang") === "en" ? "en" : "zh";
+      var root = document.documentElement;
+      root.lang = lang === "zh" ? "zh-CN" : "en";
+      root.classList.remove("lang-zh", "lang-en");
+      root.classList.add("lang-" + lang);
+    })();
+  </script>
+  <style>
+    html.lang-zh .lang-en,
+    html[lang="zh-CN"] .lang-en { display: none !important; }
+    html.lang-en .lang-zh,
+    html[lang="en"] .lang-zh { display: none !important; }
+  </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
 
 <nav>
-  <a class="nav-name" href="#home">李易聪 · Yicong Li</a>
+  <a class="nav-name" href="#home"><span class="lang-zh">李易聪</span><span class="lang-en">Yicong Li</span></a>
   <ul class="nav-links">
     <li><a href="#home"><span class="lang-zh">首页</span><span class="lang-en">Home</span></a></li>
     <li><a href="#research"><span class="lang-zh">研究</span><span class="lang-en">Research</span></a></li>
@@ -34,7 +49,7 @@
       <img src="https://yl3800.github.io/image/profile.JPG" alt="李易聪 Yicong Li">
     </div>
     <div class="hero-text">
-      <h1>李易聪 <span class="name-en">Yicong Li</span></h1>
+      <h1><span class="lang-zh">李易聪</span><span class="lang-en name-en">Yicong Li</span></h1>
       <p class="hero-subtitle lang-zh">教师 · 多模态学习 · 多智能体系统 · 智能决策</p>
       <p class="hero-subtitle lang-en">Faculty · Multimodal Learning · Multi-Agent Systems · Intelligent AI</p>
 
@@ -321,7 +336,10 @@
   function applyLang(next) {
     lang = next;
     localStorage.setItem("site-lang", lang);
-    document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
+    var root = document.documentElement;
+    root.lang = lang === "zh" ? "zh-CN" : "en";
+    root.classList.remove("lang-zh", "lang-en");
+    root.classList.add("lang-" + lang);
     document.title = META[lang].title;
     document.getElementById("meta-desc").setAttribute("content", META[lang].desc);
     btn.textContent = lang === "zh" ? "EN" : "中";

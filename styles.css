@@ -114,10 +114,12 @@ nav {
 }
 
 /* ── i18n visibility ── */
+html.lang-zh .lang-en,
 html[lang="zh-CN"] .lang-en {
   display: none !important;
 }
 
+html.lang-en .lang-zh,
 html[lang="en"] .lang-zh {
   display: none !important;
 }
@@ -193,11 +195,21 @@ html[lang="en"] .lang-zh {
 
 .hero-text h1 .name-en {
   display: block;
-  margin-top: 0.15rem;
-  font-size: 1.35rem;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.72);
-  letter-spacing: 0.01em;
+  margin-top: 0;
+  font-size: 2.85rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.02em;
+  line-height: 1.12;
+}
+
+html.lang-zh .hero-text h1 .lang-zh {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 2.85rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.02em;
+  line-height: 1.12;
 }
 
 .hero-subtitle {
