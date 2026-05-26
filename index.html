@@ -25,22 +25,22 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
 
 <nav>
   <a class="nav-name" href="#home"><span class="lang-zh">李易聪</span><span class="lang-en">Yicong Li</span></a>
-  <ul class="nav-links">
-    <li><a href="#home"><span class="lang-zh">首页</span><span class="lang-en">Home</span></a></li>
-    <li><a href="#research"><span class="lang-zh">研究</span><span class="lang-en">Research</span></a></li>
-    <li><a href="#news"><span class="lang-zh">动态</span><span class="lang-en">News</span></a></li>
-    <li><a href="#publications"><span class="lang-zh">论文</span><span class="lang-en">Publications</span></a></li>
-    <li><a href="#background"><span class="lang-zh">背景</span><span class="lang-en">Background</span></a></li>
-    <li>
-      <button type="button" class="lang-toggle" id="lang-toggle" aria-label="Switch language">EN</button>
-    </li>
-  </ul>
+  <div class="nav-end">
+    <ul class="nav-links">
+      <li><a href="#home"><span class="lang-zh">首页</span><span class="lang-en">Home</span></a></li>
+      <li><a href="#research"><span class="lang-zh">研究</span><span class="lang-en">Research</span></a></li>
+      <li><a href="#news"><span class="lang-zh">动态</span><span class="lang-en">News</span></a></li>
+      <li><a href="#publications"><span class="lang-zh">论文</span><span class="lang-en">Publications</span></a></li>
+      <li><a href="#background"><span class="lang-zh">背景</span><span class="lang-en">Background</span></a></li>
+    </ul>
+    <button type="button" class="lang-toggle" id="lang-toggle" aria-label="Switch language">EN</button>
+  </div>
 </nav>
 
 <section class="hero" id="home">
@@ -342,7 +342,7 @@
     root.classList.add("lang-" + lang);
     document.title = META[lang].title;
     document.getElementById("meta-desc").setAttribute("content", META[lang].desc);
-    btn.textContent = lang === "zh" ? "EN" : "中";
+    btn.textContent = lang === "zh" ? "EN" : "中文";
     btn.setAttribute("aria-label", lang === "zh" ? "Switch to English" : "切换至中文");
   }
 
